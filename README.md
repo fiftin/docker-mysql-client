@@ -1,4 +1,4 @@
-# mysql-client
+# docker-mysql-client
 
 [![Docker Hub](https://img.shields.io/badge/docker-ready-blue.svg)](https://registry.hub.docker.com/u/banzaicloud/mysql-client/) 
 
