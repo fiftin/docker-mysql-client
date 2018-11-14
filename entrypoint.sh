@@ -11,4 +11,6 @@ fi
 
 : "${MYSQL_USER:=root}"
 
-exec mysql $MYSQL_VERBOSE -u $MYSQL_USER $MYSQL_PASSWORD "$@"
+: "${MYSQL_HOST:=localhost}"
+
+exec mysql $MYSQL_VERBOSE -u $MYSQL_USER $MYSQL_PASSWORD -h$MYSQL_HOST -e "$(echo $@ | envtpl)"
