@@ -2,7 +2,7 @@ FROM golang:alpine as tools
 
 RUN apk update
 RUN apk add git
-RUN go get github.com/subfuzion/envtpl
+RUN go get github.com/subfuzion/envtpl/...
 
 FROM alpine:3.7
 
